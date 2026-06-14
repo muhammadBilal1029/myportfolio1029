@@ -39,6 +39,7 @@ const profile = {
     "Developed AllFor4x4 Admin Panel, a comprehensive CMS with inventory management, analytics, blog management, and role-based access control.",
     "Created FursatiPro.io, an AI-powered job discovery platform with intelligent matching algorithms and real-time job alerts.",
     "Built Brainscraft Technologies website, a professional corporate web presence showcasing services and portfolio with modern UI/UX.",
+    "Developed SmartBites, an AI-powered WhatsApp restaurant assistant using n8n and Meta Business API for automated customer support and order management.",
     "Developed Skill Sense (FYP), an AI interview platform with automated evaluation system and company portal for candidate matching.",
     "Built City Academy, a complete web-based educational management system with student, teacher, and admin portals.",
     "Created Unipuler, a web scraping tool to automate data extraction and cleaning from multiple sources using Puppeteer.",
@@ -72,6 +73,9 @@ const profile = {
     APIsIntegration: [
       "Stripe API",
       "Google Maps API",
+      "Meta Business API",
+      "WhatsApp API",
+      "Google Sheets API",
       "AI APIs",
       "Third-party Service Integration",
     ],
@@ -79,6 +83,7 @@ const profile = {
       "Git & GitHub",
       "VS Code",
       "Postman",
+      "n8n",
       "Vercel",
       "Netlify",
       "Railway",
@@ -95,6 +100,8 @@ const profile = {
       "Project Management",
       "CMS Development",
       "E-commerce Solutions",
+      "Workflow Automation",
+      "Business Process Automation",
     ],
   },
 };
@@ -112,7 +119,7 @@ const projects = [
     ],
     links: [{ href: "https://4x4new-production.up.railway.app", label: "Live Demo" }],
     chips: ["Next.js", "React.js", "Node.js", "MongoDB", "TypeScript", "Stripe API", "Google Maps API"],
-    image: "/images/allfor4x4.png",
+    image: "/images/allfor4x4.jpg",
   },
   {
     icon: Rocket,
@@ -140,7 +147,7 @@ const projects = [
     ],
     links: [],
     chips: ["Next.js", "React.js", "TypeScript", "AI/ML", "Node.js"],
-    image: "/images/fursatipro.png",
+    image: "/images/fursatipro.jpg",
   },
   {
     icon: Rocket,
@@ -152,7 +159,7 @@ const projects = [
     ],
     links: [{ href: "https://city-academy-nextjs-front.vercel.app/", label: "Live Demo" }],
     chips: ["Next.js", "Nest.js", "Prisma", "Railway"],
-    image: "/images/city-academy.png",
+    image: "/images/city-academy.jpg",
   },
   {
     icon: Rocket,
@@ -172,7 +179,7 @@ const projects = [
       "Prisma",
       "CSV Export",
     ],
-    image: "/images/nppes.png",
+    image: "/images/nppes.jpg",
   },
   {
     icon: Rocket,
@@ -208,7 +215,7 @@ const projects = [
     ],
     links: [{ href: "https://gamerzhub.netlify.app/", label: "Live Demo" }],
     chips: ["React.js", "Bootstrap", "JavaScript", "PHP", "MySQL"],
-    image: "/images/gamerz-hub.png",
+    image: "/images/gamerz-hub.jpg",
   },
   {
     icon: Rocket,
@@ -221,7 +228,7 @@ const projects = [
     ],
     links: [],
     chips: ["React.js", "Node.js", "MongoDB"],
-    image: "/images/student-hub.png",
+    image: "/images/student-hub.jpg",
   },
   {
     icon: Rocket,
@@ -247,7 +254,22 @@ const projects = [
     ],
     links: [{ href: "https://tastyspicyburger.netlify.app/", label: "Live Demo" }],
     chips: ["React.js", "Bootstrap", "CSS", "JavaScript"],
-    image: "/images/tasty-burger.png",
+    image: "/images/tasty-burger.jpg",
+  },
+  {
+    icon: Rocket,
+    title: "SmartBites: AI WhatsApp Restaurant Assistant",
+    bullets: [
+      "AI-powered WhatsApp assistant for automated customer support (Oct 2024 – Nov 2024)",
+      "Built with n8n and Meta WhatsApp Business API for restaurant automation",
+      "Automatic responses to customer queries with menu availability checks",
+      "Suggests alternatives for unavailable items and handles Messenger & Business numbers",
+      "Integrates with Google Sheets for real-time order management and tracking",
+      "Provides 24/7 instant support, reduces order errors, and improves customer experience",
+    ],
+    links: [],
+    chips: ["n8n", "Meta Business API", "WhatsApp API", "Google Sheets API", "AI Automation", "Workflow Automation", "Restaurant Tech"],
+    image: "/images/smartbites.jpg",
   },
   {
     icon: Rocket,
@@ -266,7 +288,7 @@ const projects = [
       "React.js",
       "MUI",
     ],
-    image: "/images/unipuler.png",
+    image: "/images/unipuler.jpg",
   },
   {
     icon: Rocket,
@@ -279,7 +301,7 @@ const projects = [
     ],
     links: [],
     chips: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
-    image: "/images/facebook-clone.png",
+    image: "/images/facebook-clone.jpg",
   },
 ];
 
@@ -496,7 +518,7 @@ export default function Page() {
             delivering real business value. 🚀
             <br />
             <br />
-            With hands-on experience developing 13+ full-stack projects, I’ve recently built:
+            With hands-on experience developing 14+ full-stack projects, I’ve recently built:
             <br />
             → <strong>AllFor4x4</strong> – Complete e-commerce platform with Stripe payments, Google Maps integration, and shipping management
             <br />
@@ -506,10 +528,12 @@ export default function Page() {
             <br />
             → <strong>Brainscraft Technologies Website</strong> – Professional corporate web presence with modern UI/UX
             <br />
+            → <strong>SmartBites</strong> – AI WhatsApp restaurant assistant with n8n automation and Meta Business API integration
+            <br />
             → <strong>Skill Sense</strong> – AI interview platform (FYP project) with automated evaluation system
             <br />
             <br />
-            My expertise lies in the MERN stack (MongoDB, Express.js, React.js, Node.js), TypeScript, Next.js, and integrating third-party services like Stripe, Google Maps, and AI/ML APIs for production-ready applications.
+            My expertise lies in the MERN stack (MongoDB, Express.js, React.js, Node.js), TypeScript, Next.js, workflow automation with n8n, and integrating third-party services like Stripe, Google Maps, Meta APIs, and AI/ML APIs for production-ready applications.
             <br />
             <br />
             🔄 𝐅𝐚𝐜𝐢𝐧𝐠 𝐭𝐡𝐞𝐬𝐞 𝐰𝐞𝐛 𝐝𝐞𝐯 𝐜𝐡𝐚𝐥𝐥𝐞𝐧𝐠𝐞𝐬?

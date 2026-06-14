@@ -14,8 +14,9 @@ Add your project images to this directory with the following filenames (in order
 9. student-hub.png - Student Hub App
 10. brainscraft.png - Brainscraft Technologies Website
 11. tasty-burger.png - Tasty Burger Online Food Ordering
-12. unipuler.png - Unipuler Web Scraping Tool
-13. facebook-clone.png - Facebook Login Page Clone
+12. smartbites.png - SmartBites AI WhatsApp Restaurant Assistant
+13. unipuler.png - Unipuler Web Scraping Tool
+14. facebook-clone.png - Facebook Login Page Clone
 
 Recommended image size: 1200x630 pixels (16:9 aspect ratio)
 Recommended format: PNG or JPG
