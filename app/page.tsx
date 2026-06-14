@@ -31,21 +31,25 @@ const profile = {
   linkedin:
     "https://www.linkedin.com/in/mirzabilal1029?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   resumeUrl:
-    "https://drive.google.com/file/d/1sevE9742HWfO3JM_j5lwf_bAGyWPvzM4/view?usp=drive_link",
+    "https://drive.google.com/file/d/1hlpTeyKGvhHyvSQDBeyvZ5s5q0qFEwS1/view?usp=drivesdk",
   Freelancer: 'https://www.freelancer.com/u/muhammadb1029?frm=muhammadb1029&sb=t',
   education: "Bachelors (Software Engineering) - PMAD-ARID Agriculture University, Rawalpindi",
   achievements: [
-    "Developed City Academy, a complete web-based educational management system with student, teacher, and admin portals.",
-    "Built Unipuler, a Python-based web scraping tool to automate data extraction and cleaning from multiple sources.",
-    "Created Tasty Burger, a responsive React.js food ordering platform with cart and checkout features.",
-    "Developed Gamerz Hub, a gaming community platform with interactive UI and integrated features.",
-    "Designed and deployed a personal portfolio website showcasing skills, projects, and experience in web development.",
-    "Hands-on experience with MERN stack (MongoDB, Express.js, React.js, Node.js) and modern frontend tools.",
+    "Built AllFor4x4, a complete e-commerce platform for off-road enthusiasts with Stripe payments, Google Maps integration, and Australia Post shipping.",
+    "Developed AllFor4x4 Admin Panel, a comprehensive CMS with inventory management, analytics, blog management, and role-based access control.",
+    "Created FursatiPro.io, an AI-powered job discovery platform with intelligent matching algorithms and real-time job alerts.",
+    "Built Brainscraft Technologies website, a professional corporate web presence showcasing services and portfolio with modern UI/UX.",
+    "Developed Skill Sense (FYP), an AI interview platform with automated evaluation system and company portal for candidate matching.",
+    "Built City Academy, a complete web-based educational management system with student, teacher, and admin portals.",
+    "Created Unipuler, a web scraping tool to automate data extraction and cleaning from multiple sources using Puppeteer.",
+    "Developed NPPES platform, a healthcare provider data system with advanced filtering, CSV export, and authentication features.",
+    "Hands-on experience with full-stack development using MERN stack, TypeScript, Next.js, and integrating third-party APIs.",
   ],
   skills: {
     WebDevelopment: [
       "React.js",
       "Next.js",
+      "TypeScript",
       "Nest Js",
       "Node.js",
       "Express.js",
@@ -56,12 +60,20 @@ const profile = {
       "Material UI",
       "Bootstrap",
       "Tailwind CSS",
+      "Framer Motion",
     ],
     DataAndAI: [
       "Web Scraping",
       "Data Cleaning",
       "Pandas",
+      "AI/ML Integration",
       "Basic Machine Learning (Scikit-Learn)",
+    ],
+    APIsIntegration: [
+      "Stripe API",
+      "Google Maps API",
+      "AI APIs",
+      "Third-party Service Integration",
     ],
     ToolsAndPlatforms: [
       "Git & GitHub",
@@ -69,6 +81,7 @@ const profile = {
       "Postman",
       "Vercel",
       "Netlify",
+      "Railway",
       "Heroku",
       "Firebase",
       "Docker (basic)",
@@ -80,11 +93,55 @@ const profile = {
       "Agile Development",
       "Communication",
       "Project Management",
+      "CMS Development",
+      "E-commerce Solutions",
     ],
   },
 };
 
 const projects = [
+  {
+    icon: Rocket,
+    title: "AllFor4x4 – E-Commerce Platform",
+    bullets: [
+      "Complete e-commerce platform for off-road and 4x4 vehicle enthusiasts",
+      "Product catalog, user authentication, shopping cart, and secure checkout",
+      "Stripe payment integration and Google Maps address validation",
+      "Australia Post & TNT shipping integration",
+      "Responsive design with admin dashboard for product and order management",
+    ],
+    links: [{ href: "https://4x4new-production.up.railway.app", label: "Live Demo" }],
+    chips: ["Next.js", "React.js", "Node.js", "MongoDB", "TypeScript", "Stripe API", "Google Maps API"],
+    image: "/images/allfor4x4.png",
+  },
+  {
+    icon: Rocket,
+    title: "AllFor4x4 Admin Panel",
+    bullets: [
+      "Centralized dashboard for complete e-commerce platform control",
+      "Product, category, brand, and inventory management",
+      "Order management, tracking, and customer management",
+      "CMS, blog management, SEO management, and website configuration",
+      "Role-based access control with responsive user-friendly interface",
+    ],
+    links: [],
+    chips: ["Next.js", "React.js", "Node.js", "MongoDB", "TypeScript"],
+    image: "/images/allfor4x4-admin.png",
+  },
+  {
+    icon: Rocket,
+    title: "FursatiPro.io – AI Job Discovery Platform",
+    bullets: [
+      "AI-driven job discovery and matching platform",
+      "Personalized job recommendations based on skills and profile",
+      "Real-time job alerts for new opportunities",
+      "Smart filtering based on preferences (location, role, tech stack)",
+      "Profile-based candidate-job matching system with fast user-friendly search",
+    ],
+    links: [],
+    chips: ["Next.js", "React.js", "TypeScript", "AI/ML", "Node.js"],
+    image: "/images/fursatipro.png",
+  },
   {
     icon: Rocket,
     title: "City Academy – Educational Management System",
@@ -93,8 +150,9 @@ const projects = [
       "Features include attendance, results, assignments, and fee management",
       "Admin dashboard for centralized academic operations",
     ],
-    links: ["https://city-academy-nextjs-front.vercel.app/"],
+    links: [{ href: "https://city-academy-nextjs-front.vercel.app/", label: "Live Demo" }],
     chips: ["Next.js", "Nest.js", "Prisma", "Railway"],
+    image: "/images/city-academy.png",
   },
   {
     icon: Rocket,
@@ -105,7 +163,7 @@ const projects = [
       "Export provider data to CSV for analysis and reporting",
       "Includes authentication features: login/signup, reset & forgot password",
     ],
-    links: ["https://nppes-dashboard-front.vercel.app"],
+    links: [{ href: "https://nppes-dashboard-front.vercel.app", label: "Live Demo" }],
     chips: [
       "Next.js",
       "Node.js",
@@ -114,25 +172,19 @@ const projects = [
       "Prisma",
       "CSV Export",
     ],
+    image: "/images/nppes.png",
   },
-
   {
     icon: Rocket,
-    title: "Unipuler – Web Scraping Tool",
+    title: "Skill Sense – AI Interview Platform (FYP)",
     bullets: [
-      "Automated large-scale data extraction using Puppeteer and Chromium",
-      "Scraped, cleaned, and structured data for analytics and reporting",
-      "Frontend built with React.js and MUI for visualization and user interaction",
+      "AI-generated mock interviews based on selected skills",
+      "Evaluation with feedback on strengths and weaknesses",
+      "Company portal to post interviews and match candidates",
     ],
-    links: ["https://unipuler-front.vercel.app"],
-    chips: [
-      "Puppeteer",
-      "Chromium",
-      "Node.js",
-      "Express.js",
-      "React.js",
-      "MUI",
-    ],
+    links: [{ href: "https://skill-sense-front.vercel.app/", label: "Live Demo" }],
+    chips: ["Next.js", "Node.js", "Prisma", "MongoDB", "AI Models"],
+    image: "/images/skill-sense.png",
   },
   {
     icon: Rocket,
@@ -142,20 +194,9 @@ const projects = [
       "Focused on clean UI/UX with fast performance and SEO optimization",
       "Integrated modern frontend tools for smooth animations and layouts",
     ],
-    links: ["https://netaesthetics.vercel.app/"],
+    links: [{ href: "https://netaesthetics.vercel.app/", label: "Live Demo" }],
     chips: ["Next.js", "React.js", "Tailwind CSS", "Vercel"],
-  },
-
-  {
-    icon: Rocket,
-    title: "Tasty Burger – Online Food Ordering",
-    bullets: [
-      "Responsive React.js food ordering platform",
-      "Dynamic menu with add-to-cart and checkout flow",
-      "User-friendly UI for a seamless ordering experience",
-    ],
-    links: ["https://tastyspicyburger.netlify.app/"],
-    chips: ["React.js", "Bootstrap", "CSS", "JavaScript"],
+    image: "/images/netaesthetics.png",
   },
   {
     icon: Rocket,
@@ -165,19 +206,80 @@ const projects = [
       "Features community engagement and gaming resources",
       "Frontend built with modern UI/UX practices",
     ],
-    links: ["https://gamerzhub.netlify.app/"],
+    links: [{ href: "https://gamerzhub.netlify.app/", label: "Live Demo" }],
     chips: ["React.js", "Bootstrap", "JavaScript", "PHP", "MySQL"],
+    image: "/images/gamerz-hub.png",
   },
   {
     icon: Rocket,
-    title: "Skill Sense – AI Interview Platform",
+    title: "Student Hub App",
     bullets: [
-      "AI-generated mock interviews based on selected skills",
-      "Evaluation with feedback on strengths and weaknesses",
-      "Company portal to post interviews and match candidates",
+      "Student management platform designed to streamline academic activities and communication",
+      "Student profiles, course management, and announcements",
+      "Information sharing through responsive and user-friendly interface",
+      "Focused on improving accessibility, organization, and overall student experience",
     ],
-    links: ["https://skill-sense1029.vercel.app/"],
-    chips: ["Next.js", "Node.js", "Prisma", "MongoDB", "AI Models"],
+    links: [],
+    chips: ["React.js", "Node.js", "MongoDB"],
+    image: "/images/student-hub.png",
+  },
+  {
+    icon: Rocket,
+    title: "Brainscraft Technologies Website",
+    bullets: [
+      "Modern, professional, and responsive web presence for software development company",
+      "Service and solution showcase with company portfolio presentation",
+      "Contact and lead generation forms",
+      "Performance optimization with SEO-friendly structure",
+      "Clean and scalable frontend architecture",
+    ],
+    links: [{ href: "https://brainscraft.io", label: "Live Website" }],
+    chips: ["Next.js", "React.js", "TypeScript", "Tailwind CSS"],
+    image: "/images/brainscraft.png",
+  },
+  {
+    icon: Rocket,
+    title: "Tasty Burger – Online Food Ordering",
+    bullets: [
+      "Responsive React.js food ordering platform",
+      "Dynamic menu with add-to-cart and checkout flow",
+      "User-friendly UI for a seamless ordering experience",
+    ],
+    links: [{ href: "https://tastyspicyburger.netlify.app/", label: "Live Demo" }],
+    chips: ["React.js", "Bootstrap", "CSS", "JavaScript"],
+    image: "/images/tasty-burger.png",
+  },
+  {
+    icon: Rocket,
+    title: "Unipuler – Web Scraping Tool",
+    bullets: [
+      "Automated large-scale data extraction using Puppeteer and Chromium",
+      "Scraped, cleaned, and structured data for analytics and reporting",
+      "Frontend built with React.js and MUI for visualization and user interaction",
+    ],
+    links: [{ href: "https://unipuler-front.vercel.app", label: "Live Demo" }],
+    chips: [
+      "Puppeteer",
+      "Chromium",
+      "Node.js",
+      "Express.js",
+      "React.js",
+      "MUI",
+    ],
+    image: "/images/unipuler.png",
+  },
+  {
+    icon: Rocket,
+    title: "Facebook Login Page Clone",
+    bullets: [
+      "Pixel-perfect UI design recreating the classic Facebook login interface",
+      "Responsive layout with form validation",
+      "Mobile and desktop compatibility",
+      "Clean and structured code with user-friendly interface",
+    ],
+    links: [],
+    chips: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+    image: "/images/facebook-clone.png",
   },
 ];
 
@@ -216,7 +318,19 @@ const ProjectCard = ({ p }: any) => {
       viewport={{ once: true }}
       transition={{ duration: 0.4 }}
     >
-      <Card className="hover:shadow-lg transition-shadow border border-slate-200 dark:border-slate-800">
+      <Card className="hover:shadow-lg transition-shadow border border-slate-200 dark:border-slate-800 overflow-hidden">
+        {p.image && (
+          <div className="w-full h-48 bg-slate-100 dark:bg-slate-800 overflow-hidden">
+            <img
+              src={p.image}
+              alt={p.title}
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+              }}
+            />
+          </div>
+        )}
         <CardHeader className="space-y-1">
           <div className="flex items-center gap-2 text-sky-700 dark:text-sky-300">
             <Icon className="w-5 h-5" />
@@ -234,7 +348,7 @@ const ProjectCard = ({ p }: any) => {
               <li key={i}>{b}</li>
             ))}
           </ul>
-          {p.links.length > 0 && (
+          {p.links && p.links.length > 0 && (
             <div className="flex flex-wrap gap-3 pt-4">
               {p.links.map((l: any, i: number) => (
                 <a
@@ -374,18 +488,28 @@ export default function Page() {
           color="from-sky-600 to-cyan-600"
         >
           <p className="text-slate-700 dark:text-slate-300 leading-7">
-            Need a production-ready Web App, SaaS platform, or Automation fast?
+            Need a production-ready Web App, SaaS platform, or E-commerce solution?
             Tap "Hire Me", or send me an email, and we’ll discuss what we can
             build together. I build reliable full-stack applications end-to-end
             — from database design and backend APIs to responsive frontends and
             seamless deployment. I care about scalability, performance, and
-            delivering real business value. 🚀 With hands-on experience
-            developing 6+ full-stack projects, I’ve built systems like City
-            Academy (educational management system), Unipuler (web scraping
-            platform), Skill Sense (AI-powered interview system), and more. My
-            expertise lies in the MERN stack (MongoDB, Express.js, React.js,
-            Node.js) along with modern tools like Next.js, Prisma, and Railway
-            for production-ready apps.
+            delivering real business value. 🚀
+            <br />
+            <br />
+            With hands-on experience developing 13+ full-stack projects, I’ve recently built:
+            <br />
+            → <strong>AllFor4x4</strong> – Complete e-commerce platform with Stripe payments, Google Maps integration, and shipping management
+            <br />
+            → <strong>AllFor4x4 Admin Panel</strong> – Comprehensive CMS with inventory management, analytics, and role-based access control
+            <br />
+            → <strong>FursatiPro.io</strong> – AI-powered job discovery platform with intelligent matching and real-time alerts
+            <br />
+            → <strong>Brainscraft Technologies Website</strong> – Professional corporate web presence with modern UI/UX
+            <br />
+            → <strong>Skill Sense</strong> – AI interview platform (FYP project) with automated evaluation system
+            <br />
+            <br />
+            My expertise lies in the MERN stack (MongoDB, Express.js, React.js, Node.js), TypeScript, Next.js, and integrating third-party services like Stripe, Google Maps, and AI/ML APIs for production-ready applications.
             <br />
             <br />
             🔄 𝐅𝐚𝐜𝐢𝐧𝐠 𝐭𝐡𝐞𝐬𝐞 𝐰𝐞𝐛 𝐝𝐞𝐯 𝐜𝐡𝐚𝐥𝐥𝐞𝐧𝐠𝐞𝐬?
@@ -401,6 +525,8 @@ export default function Page() {
             → Struggling with login/authentication & security
             <br />
             → Deployments failing or apps crashing under scale
+            <br />
+            → Need e-commerce solutions with payment integration
             <br />
             <br />
             👉 I’m here to be your strategic partner — not just to build
