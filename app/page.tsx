@@ -109,6 +109,21 @@ const profile = {
 const projects = [
   {
     icon: Rocket,
+    title: "Real-Time Chat Application – Live Communication Platform",
+    bullets: [
+      "Full-stack real-time communication platform similar to WhatsApp/Discord with Socket.io",
+      "Real-time messaging with live typing indicators and online/offline status tracking",
+      "File sharing between users, voice messages support, and audio/video calling (WebRTC)",
+      "Email-based contact system with user verification before connecting",
+      "Deployed on AWS with CI/CD pipeline using GitHub Actions for automatic deployment",
+      "Handles socket synchronization, media streaming, and scalable real-time systems",
+    ],
+    links: [{ href: "https://chat-app-1029.work.gd", label: "Live Demo" }],
+    chips: ["React.js", "Node.js", "Express.js", "Socket.io", "WebRTC", "AWS", "GitHub Actions", "MongoDB", "CI/CD"],
+    image: "/images/chat-app.png",
+  },
+  {
+    icon: Rocket,
     title: "AllFor4x4 – E-Commerce Platform",
     bullets: [
       "Complete e-commerce platform for off-road and 4x4 vehicle enthusiasts",
