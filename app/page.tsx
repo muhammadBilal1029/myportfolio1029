@@ -35,6 +35,7 @@ const profile = {
   Freelancer: 'https://www.freelancer.com/u/muhammadb1029?frm=muhammadb1029&sb=t',
   education: "Bachelors (Software Engineering) - PMAD-ARID Agriculture University, Rawalpindi",
   achievements: [
+    "Built a real-time chat application with Socket.io, WebRTC for audio/video calling, file sharing, and CI/CD deployment on AWS using GitHub Actions.",
     "Built AllFor4x4, a complete e-commerce platform for off-road enthusiasts with Stripe payments, Google Maps integration, and Australia Post shipping.",
     "Developed AllFor4x4 Admin Panel, a comprehensive CMS with inventory management, analytics, blog management, and role-based access control.",
     "Created FursatiPro.io, an AI-powered job discovery platform with intelligent matching algorithms and real-time job alerts.",
@@ -44,7 +45,7 @@ const profile = {
     "Built City Academy, a complete web-based educational management system with student, teacher, and admin portals.",
     "Created Unipuler, a web scraping tool to automate data extraction and cleaning from multiple sources using Puppeteer.",
     "Developed NPPES platform, a healthcare provider data system with advanced filtering, CSV export, and authentication features.",
-    "Hands-on experience with full-stack development using MERN stack, TypeScript, Next.js, and integrating third-party APIs.",
+    "Hands-on experience with full-stack development using MERN stack, TypeScript, Next.js, real-time systems, and DevOps automation.",
   ],
   skills: {
     WebDevelopment: [
@@ -57,6 +58,8 @@ const profile = {
       "MongoDB",
       "Mongoose",
       "REST APIs",
+      "Socket.io",
+      "WebRTC",
       "JWT Authentication",
       "Material UI",
       "Bootstrap",
@@ -81,15 +84,23 @@ const profile = {
     ],
     ToolsAndPlatforms: [
       "Git & GitHub",
+      "GitHub Actions",
       "VS Code",
       "Postman",
       "n8n",
+      "AWS",
       "Vercel",
       "Netlify",
       "Railway",
       "Heroku",
       "Firebase",
       "Docker (basic)",
+    ],
+    DevOps: [
+      "CI/CD Pipelines",
+      "AWS Deployment",
+      "Automated Testing",
+      "Infrastructure as Code",
     ],
     Mobile: ["Android (Beginner)", "Responsive UI Development"],
     SoftSkills: [
@@ -533,7 +544,9 @@ export default function Page() {
             delivering real business value. 🚀
             <br />
             <br />
-            With hands-on experience developing 14+ full-stack projects, I’ve recently built:
+            With hands-on experience developing 15+ full-stack projects, I’ve recently built:
+            <br />
+            → <strong>Real-Time Chat Application</strong> – Live communication platform with Socket.io, WebRTC, audio/video calling, and CI/CD deployment on AWS
             <br />
             → <strong>AllFor4x4</strong> – Complete e-commerce platform with Stripe payments, Google Maps integration, and shipping management
             <br />
@@ -548,7 +561,7 @@ export default function Page() {
             → <strong>Skill Sense</strong> – AI interview platform (FYP project) with automated evaluation system
             <br />
             <br />
-            My expertise lies in the MERN stack (MongoDB, Express.js, React.js, Node.js), TypeScript, Next.js, workflow automation with n8n, and integrating third-party services like Stripe, Google Maps, Meta APIs, and AI/ML APIs for production-ready applications.
+            My expertise lies in the MERN stack (MongoDB, Express.js, React.js, Node.js), TypeScript, Next.js, real-time systems with Socket.io and WebRTC, workflow automation with n8n, and DevOps with CI/CD pipelines using GitHub Actions and AWS deployment.
             <br />
             <br />
             🔄 𝐅𝐚𝐜𝐢𝐧𝐠 𝐭𝐡𝐞𝐬𝐞 𝐰𝐞𝐛 𝐝𝐞𝐯 𝐜𝐡𝐚𝐥𝐥𝐞𝐧𝐠𝐞𝐬?
