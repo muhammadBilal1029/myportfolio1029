@@ -31,6 +31,7 @@ const profile = {
   linkedin:
     "https://www.linkedin.com/in/mirzabilal1029?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   resumeUrl: process.env.NEXT_PUBLIC_RESUME_URL,
+  
   Freelancer: 'https://www.freelancer.com/u/muhammadb1029?frm=muhammadb1029&sb=t',
   education: "Bachelors (Software Engineering) - PMAD-ARID Agriculture University, Rawalpindi",
   achievements: [
