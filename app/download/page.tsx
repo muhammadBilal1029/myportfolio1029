@@ -1,7 +1,7 @@
 
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type HTMLMotionProps } from "framer-motion";
 import {
   Download,
   PlayCircle,
@@ -39,11 +39,7 @@ export default function DownloadPage() {
 
       {/* Hero */}
       <section className="mx-auto max-w-5xl px-5 pb-12 pt-16 text-center sm:pt-20">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
+        <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900 shadow-2xl shadow-sky-950/30">
           <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-3xl border border-sky-400/20 bg-sky-400/10">
             <Smartphone size={38} className="text-sky-400" />
           </div>
@@ -63,7 +59,7 @@ export default function DownloadPage() {
             Watch our quick demo to explore the features, see how everything
             works, and download the Android app when you are ready.
           </p>
-        </motion.div>
+        </div>
       </section>
 
       {/* Video */}
