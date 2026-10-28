@@ -64,12 +64,7 @@ export default function DownloadPage() {
 
       {/* Video */}
       <section className="mx-auto max-w-4xl px-5">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.98 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.15 }}
-          className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900 shadow-2xl shadow-sky-950/30"
-        >
+        <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900 shadow-2xl shadow-sky-950/30">
           <div className="flex items-center gap-3 border-b border-white/10 px-5 py-4">
             <PlayCircle className="text-sky-400" size={23} />
 
@@ -95,7 +90,7 @@ export default function DownloadPage() {
           <div className="px-5 py-4 text-sm text-slate-400">
             Take a look at the main features before installing the app.
           </div>
-        </motion.div>
+        </div>
       </section>
 
       {/* App information */}
